@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leads",
+  "info": {
+    "singularName": "lead",
+    "pluralName": "leads",
+    "displayName": "lead",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "type": "string"
+    },
+    "user_name": {
+      "type": "string"
+    },
+    "flat_name": {
+      "type": "string"
+    },
+    "assign": {
+      "type": "string"
+    },
+    "flat_id": {
+      "type": "string"
+    },
+    "channel_partner": {
+      "type": "string"
+    },
+    "phone_number": {
+      "type": "string"
+    },
+    "project_type": {
+      "type": "string"
+    },
+    "booked": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

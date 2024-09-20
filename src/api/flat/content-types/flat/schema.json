@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "flats",
+  "info": {
+    "singularName": "flat",
+    "pluralName": "flats",
+    "displayName": "flat",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "images": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "BHK": {
+      "type": "string"
+    },
+    "area": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "yt_link": {
+      "type": "string"
+    },
+    "project_type": {
+      "type": "enumeration",
+      "enum": [
+        "Ongoing Project",
+        "Upcoming Project",
+        "Completed Project"
+      ],
+      "default": "Ongoing Project",
+      "required": true
+    },
+    "project": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::project.project"
+    },
+    "total": {
+      "type": "biginteger"
+    },
+    "booked": {
+      "type": "biginteger"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_ids",
+  "info": {
+    "singularName": "user-id",
+    "pluralName": "user-ids",
+    "displayName": "user_id",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "mail": {
+      "type": "string"
+    },
+    "number": {
+      "type": "biginteger"
+    },
+    "user_type": {
+      "type": "string"
+    },
+    "userId": {
+      "type": "string"
+    }
+  }
+}

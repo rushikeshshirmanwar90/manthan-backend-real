@@ -1,0 +1,63 @@
+{
+  "kind": "collectionType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "project",
+    "pluralName": "projects",
+    "displayName": "project",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectName": {
+      "type": "string"
+    },
+    "projectImage": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "ProjectType": {
+      "type": "enumeration",
+      "enum": [
+        "onGoing",
+        "completed",
+        "upComing"
+      ]
+    },
+    "address": {
+      "type": "string"
+    },
+    "state": {
+      "type": "string"
+    },
+    "city": {
+      "type": "string"
+    },
+    "parkingSpace": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "swimmingPool": {
+      "type": "boolean",
+      "default": false
+    },
+    "smartHome": {
+      "type": "boolean",
+      "default": false
+    },
+    "playGround": {
+      "type": "boolean"
+    }
+  }
+}
