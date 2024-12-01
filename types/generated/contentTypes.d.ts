@@ -794,9 +794,10 @@ export interface ApiAchievementAchievement extends Schema.CollectionType {
     singularName: 'achievement';
     pluralName: 'achievements';
     displayName: 'Achievement';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     Title: Attribute.Text;
@@ -804,7 +805,6 @@ export interface ApiAchievementAchievement extends Schema.CollectionType {
     description: Attribute.String;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::achievement.achievement',
       'oneToOne',
@@ -826,9 +826,10 @@ export interface ApiEventEvent extends Schema.CollectionType {
     singularName: 'event';
     pluralName: 'events';
     displayName: 'Event';
+    description: '';
   };
   options: {
-    draftAndPublish: true;
+    draftAndPublish: false;
   };
   attributes: {
     name: Attribute.String;
@@ -837,7 +838,6 @@ export interface ApiEventEvent extends Schema.CollectionType {
     youtube: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
-    publishedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
       'api::event.event',
       'oneToOne',
