@@ -833,7 +833,7 @@ export interface ApiEventEvent extends Schema.CollectionType {
   };
   attributes: {
     name: Attribute.String;
-    images: Attribute.Media<'images' | 'files' | 'videos' | 'audios', true>;
+    images: Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
     description: Attribute.String;
     youtube: Attribute.Text;
     createdAt: Attribute.DateTime;
